@@ -6,4 +6,8 @@ demo:
        uses: NielsMKristensen/Password-Generator@v0.1
      - name: show password
        run: echo "${{ steps.generatePassword.outputs.password }}"
-       shell: bash
+       shell: bash 
+    on:
+        push:
+            tags: - v0.1
+   
