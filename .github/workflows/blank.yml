@@ -25,7 +25,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - id: generatePassword
-        uses: NielsMKristensen/GIT-Actions-Test@v0.1
+        uses: NielsMKristensen/GIT-Actions-Test@v0.2
         with:
           length: 24
       - name: show password
