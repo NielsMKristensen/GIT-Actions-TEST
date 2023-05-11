@@ -3,11 +3,8 @@ demo:
     steps:
      - uses: actions/checkout@v2
      - id: generatePassword
-       uses: NielsMKristensen/Password-Generator@v0.1
+       uses: NielsMKristensen/GIT-Actions-Test@v0.1
      - name: show password
        run: echo "${{ steps.generatePassword.outputs.password }}"
-       shell: pwsh 
-    on:
-        push:
-            tags: - v0.1
-   
+       shell: bash
+on: [push]
