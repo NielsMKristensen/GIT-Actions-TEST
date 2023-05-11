@@ -1,15 +1,3 @@
-demo:
-    runs-on: ubuntu-latest
-    steps:
-     - uses: actions/checkout@v2
-     - id: generatePassword
-       uses: NielsMKristensen/GIT-Actions-Test@v0.1
-     - name: show password
-       run: echo "${{ steps.generatePassword.outputs.password }}"
-       shell: bash
-on: [push]
-
-
 # This is a basic workflow to help you get started with Actions
 
 name: CI
